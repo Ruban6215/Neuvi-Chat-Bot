@@ -28,8 +28,8 @@ public class AIresponse{
 
 
 
-           ChatLanguageModel model = HuggingFaceChatModel.withAccessToken("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");
-           //model= new Builder().modelId("google/flan-t5-base").accessToken("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").build();
+           ChatLanguageModel model = HuggingFaceChatModel.withAccessToken("hf_token_here");
+           
            answer = model.generate(request);
             vc=list.get(rand.nextInt(list.size()));
             obj.interact(vc);
